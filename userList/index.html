@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Список</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="outer">
+      <div class="middle">
+        <div class="inner">
+          <div class="title">Электронная очередь</div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Дата</th>
+                <th>Фамилия</th>
+                <th>Имя</th>
+              </tr>
+            </thead>
+            <tbody id="list"></tbody>
+          </table>
+
+          <form id="form" action="" method="post">
+            <input
+              id="fName"
+              class="type"
+              required
+              type="text"
+              name="fName"
+              placeholder="Имя"
+            />
+            <input
+              id="lName"
+              class="type"
+              required
+              type="text"
+              name="lName"
+              placeholder="Фамилия"
+            />
+            <input
+              id="date"
+              class="type"
+              required
+              type="date"
+              name="date"
+              placeholder="Дата"
+            />
+            <input
+              onclick="addUser()"
+              class="type btn"
+              type="submit"
+              value="Добавить"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

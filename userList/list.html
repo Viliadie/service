@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Скачать PDF</title>
+    <meta charset="utf8" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <section>
+      <article>
+        <div class="outer">
+          <div class="middle">
+            <div class="inner">
+              <div class="title">Электронная очередь</div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Дата</th>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                  </tr>
+                </thead>
+                <tbody id="list"></tbody>
+              </table>
+              <button id="renderPdf">DOWNLOAD PDF</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <script type="text/javascript" src="./js/html2canvas.js"></script>
+    <script type="text/javascript" src="./js/jsPdf.debug.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
